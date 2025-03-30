@@ -1,11 +1,10 @@
 import express from 'express';
 
 // Routes
-import TestCrudRoute from './routes/testCrud.js';
+import ApodRoute from './routes/apod.js';
 
 // Middleware
 import errorHandler from './middleware/errorHandler.js';
-import ApodRoute from './routes/apod.js';
 
 /**
  * Starts an Express server.
@@ -17,7 +16,6 @@ const startServer = (port = 5000) => {
   const router = express.Router();
 
   // Add routes
-  new TestCrudRoute(router);
   new ApodRoute(router);
 
   // Middleware
