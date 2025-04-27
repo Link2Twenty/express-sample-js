@@ -56,6 +56,11 @@ class ApodRoute extends BaseRoute {
   async getApod(req, res) {
     const { count } = req.params;
 
+    // check that count is a number
+    if (Number.isNaN(parseInt(count))) {
+      throw new Error('Invalid count parameter. Must be a number.', { cause: { status: 400 } });
+    }
+
     const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${DEMO_KEY}&count=${count}`);
 
     const json = await response.json();
