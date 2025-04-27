@@ -11,14 +11,14 @@
   "author": "Andrew Bone (Link2Twenty)",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^9.25.1",
     "clean-jsdoc-theme": "^4.3.0",
-    "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.5",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
     "jsdoc": "^4.0.4",
     "prettier": "^3.5.3"
   }
